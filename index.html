@@ -1,0 +1,214 @@
+<!-- 나중에 모바일로 봤을 때 서브 메뉴가 메뉴 바 안에 들어가도록 추가하고 싶다. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평가시험 - 이유나</title>
+
+    <style>
+        @font-face {
+            font-family: 'NanumBarunGothic';
+            src: url('./css/fonts/NanumBarunGothic.otf')
+        }
+
+        body {
+            font-family: 'NanumBarunGothic';
+        }
+    </style>
+
+    <!-- 폰트 어썸 라이브러리(사람 아이콘이나 메뉴바 아이콘 사용을 위해) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/bx_slider_style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/bx_script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let btn1 = document.getElementById('button1')
+            btn1.addEventListener('click', () => {
+                alert('클릭')
+            })
+        })
+
+        document.addEventListener('DOMContentLoaded', function() {
+            let btn2 = document.getElementById('button2')
+            btn2.addEventListener('click', () => {
+                alert('클릭')
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+
+    <!-- 웹 상단 부분 -->
+    <header>
+        <!-- util -->
+        <div class="util">
+            <ul class="util-menu">
+                <li><a href="">로그인</a></li>
+                <li><a href="">회원가입</a></li>
+            </ul>
+        </div>
+
+        <!-- menu -->
+        <div class="menu">
+            
+            <div class="menu-left">
+                <a href=""><i class="fa fa-user"></i></a> <!-- 사람 모양 아이콘 -->
+            </div>
+
+            <div class="menu-center">
+                <!-- pc로 봤을 때의 메뉴바 -->
+                <nav class="pc">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="board.html">Board</a></li>
+                        <li><a href="gallary.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="menu-right">
+                <a href=""><i class="fa fa-bars"></i></a> <!-- 메뉴 바 모양 아이콘 -->
+            </div>
+            
+        </div>
+    </header>
+
+    <br>
+    <!-- section1 -->
+    <section class="section1">
+        <!-- 이미지 슬라이드 -->
+        <div class="wrap">
+            <div class="slide-container">
+                <!-- (.slide>img[src="img/slide$$.jpg"][alt="이미지$$"][title="이미지$$"])*10 -->
+                <div class="slide"><img src="./img/slide01.jpg" alt="이미지01" title="이미지01"></div>
+                <div class="slide"><img src="./img/slide02.jpg" alt="이미지02" title="이미지02"></div>
+                <div class="slide"><img src="./img/slide03.jpg" alt="이미지03" title="이미지03"></div>
+                <div class="slide"><img src="./img/slide04.jpg" alt="이미지04" title="이미지04"></div>
+                <div class="slide"><img src="./img/slide05.jpg" alt="이미지05" title="이미지05"></div>
+                <div class="slide"><img src="./img/slide06.jpg" alt="이미지06" title="이미지06"></div>
+                <div class="slide"><img src="./img/slide07.jpg" alt="이미지07" title="이미지07"></div>
+                <div class="slide"><img src="./img/slide08.jpg" alt="이미지08" title="이미지08"></div>
+                <div class="slide"><img src="./img/slide09.jpg" alt="이미지09" title="이미지09"></div>
+                <div class="slide"><img src="./img/slide10.jpg" alt="이미지10" title="이미지10"></div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <br>
+    <!-- section2 -->
+    <section class="section2">
+        <div class="latestimg-container">
+            <div class="left-img img">
+                <img src="./img/slide01.jpg" alt="이미지01">
+                <h4>최신 이미지01</h4>
+                <br>
+                <p>최신 이미지01 입니다.</p>
+                <p>새로운 게시물을 감상해보세요.</p>
+                <br>
+                <h5 class="datezz">2023-09-22</h5>
+                <a href=""><i class="fa fa-heart-o"></i></a> <!-- 하트 모양 아이콘 -->
+            </div>
+
+            <div class="center-img img">
+                <img src="./img/slide02.jpg" alt="이미지02">
+                <h4>최신 이미지02</h4>
+                <br>
+                <p>최신 이미지02 입니다.</p>
+                <p>새로운 게시물을 감상해보세요.</p>
+                <br>
+                <h5 class="datezz">2023-09-22</h5>
+                <a href=""><i class="fa fa-heart-o"></i></a> <!-- 하트 모양 아이콘 -->
+            </div>
+
+            <div class="right-img img">
+                <img src="./img/slide03.jpg" alt="이미지03">
+                <h4>최신 이미지03</h4>
+                <br>
+                <p>최신 이미지03 입니다.</p>
+                <p>새로운 게시물을 감상해보세요.</p>
+                <br>
+                <h5 class="datezz">2023-09-22</h5>
+                <a href=""><i class="fa fa-heart-o"></i></a> <!-- 하트 모양 아이콘 -->
+            </div>
+        </div>
+    </section>
+    
+    <br>
+    <!-- section3 -->
+    <section class="section3">
+        <div class="section3-img">
+            <div class="img-box">
+                <img src="./img/img1.jpg" alt="이미지01">
+            </div>
+            <div class="text-box">
+                <h2>이미지</h2>
+                <p>내용 없음</p>
+                <button class="button1" id="button1">Button 001</button>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <!-- section4 -->
+    <section class="section4">
+        <div class="section4-img">
+            <div class="text-box2">
+                <h2>이미지</h2>
+                <p>내용 없음</p>
+                <button class="button2" id="button2">Button 002</button>
+            </div>
+            <div class="img-box2">
+                <img src="./img/slide05.jpg" alt="이미지02">
+            </div>
+        </div>
+    </section>
+
+    <!-- 웹 하단 부분 -->
+    <footer>
+
+        <table>
+            <tr>
+                <th><a href="">Board</a></th>
+                <th><a href="">Gallery</a></th>
+                <th><a href="">About</a></th>
+                <th>
+                    <select name="site" id="site">
+                        <option value="1">네이버</option>
+                        <option value="2">카카오</option>
+                        <option value="3">인스타그램</option>
+                    </select>
+                </th>
+            </tr>
+            <tr>
+                <th><a href="">공지사항</a></th>
+                <th><a href="">갤러리01</a></th>
+                <th><a href="">사이트 소개</a></th>
+            </tr>
+            <tr>
+                <th><a href="">자유 게시판</a></th>
+                <th><a href="">갤러리02</a></th>
+            </tr>
+        </table>
+
+        <div class="copyright">
+            <p>copyright All right reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
